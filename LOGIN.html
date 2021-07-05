@@ -1,0 +1,50 @@
+<html>
+  <head> 
+    <title> Basilides </title>
+  </head>
+<style>
+body {
+  background-image: url('Milktea.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<body bgcolor="white">
+<center>
+<h1><b><i>Login</i> </b></h1>
+<form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "Basilides"
+       && document.getElementById("text2").value == "Basi" )
+    {
+        alert( "validation succeeded" );
+        location.href="page1.html";
+    }
+    else
+    {
+        alert( "validation failed" );
+        location.href="page2.html";
+    }
+}
+</script>
+
+
+
+
+
+
+
+
+
+ </table>
+</br>
+</body>
+</html>
